@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #ed782d;
   border-radius: 3px;
 }
-html[dir=rtl] body {
+html[lang=ar] body {
   font-family: AR;
 }
 
@@ -185,14 +185,14 @@ select {
           appearance: none;
   background-position: left 25px top 50%;
 }
-html[dir=ltr] select {
+html[lang=en-US] select {
   background-position: right 25px top 50%;
 }
 @media (max-width: 767px) {
   select {
     background-position: left 10px top 50%;
   }
-  html[dir=ltr] select {
+  html[lang=en-US] select {
     background-position: right 10px top 50%;
   }
 }
@@ -352,10 +352,10 @@ html[dir=ltr] select {
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
-html[dir=rtl] .section-arrow .headText {
+html[lang=ar] .section-arrow .headText {
   font-size: 10px;
 }
-html[dir=ltr] .section-arrow .headText {
+html[lang=en-US] .section-arrow .headText {
   font-size: 10px;
   letter-spacing: 1.5px;
 }
@@ -419,7 +419,7 @@ html[dir=ltr] .section-arrow .headText {
   background-color: #fff;
   color: #000000;
 }
-html[dir=rtl] .slider-tools .swiper-btn i {
+html[lang=ar] .slider-tools .swiper-btn i {
   transform: scaleX(-1);
 }
 @media (max-width: 767px) {
@@ -640,10 +640,10 @@ html[dir=rtl] .slider-tools .swiper-btn i {
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
-html[dir=rtl] .scroll-btn .scrollText {
+html[lang=ar] .scroll-btn .scrollText {
   font-size: 15px;
 }
-html[dir=ltr] .scroll-btn .scrollText {
+html[lang=en-US] .scroll-btn .scrollText {
   font-size: 10px;
   letter-spacing: 4px;
 }
@@ -1349,10 +1349,10 @@ header {
 .nav-list a:hover {
   opacity: 0.8;
 }
-html[dir=rtl] .nav-list a.lang {
+html[lang=ar] .nav-list a.lang {
   font-family: en;
 }
-html[dir=ltr] .nav-list a.lang {
+html[lang=en-US] .nav-list a.lang {
   font-family: ar;
 }
 @media (max-width: 1199px) {
