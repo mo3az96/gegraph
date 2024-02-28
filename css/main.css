@@ -384,11 +384,11 @@ html[dir=ltr] .section-arrow .headText {
   justify-content: center;
   margin-top: 85px;
 }
-.services-section .more-content, .clients-section .more-content {
+.services-section .more-content, .clients-section .more-content, .more-content.services-more {
   display: none;
 }
 @media (max-width: 1199px) {
-  .services-section .more-content, .clients-section .more-content {
+  .services-section .more-content, .clients-section .more-content, .more-content.services-more {
     display: flex;
   }
 }
@@ -421,6 +421,9 @@ html[dir=ltr] .section-arrow .headText {
 .slider-tools .swiper-btn:hover {
   background-color: #fff;
   color: #000000;
+}
+html[dir=rtl] .slider-tools .swiper-btn i {
+  transform: scaleX(-1);
 }
 @media (max-width: 767px) {
   .slider-tools {
@@ -975,6 +978,7 @@ html[dir=ltr] .scroll-btn .scrollText {
 }
 .swiper-slide .work-item .work-content {
   max-width: 458px;
+  margin-inline-start: auto;
 }
 @media (max-width: 767px) {
   .swiper-slide .work-item {
