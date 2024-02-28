@@ -64,6 +64,47 @@ $(document).ready(function () {
       },
     },
   });
+  /************************************ Works Sliders ************************************/
+  var worksSwiper = new Swiper(".works-slider .swiper", {
+    loop: true,
+    a11y: {
+      enabled: false,
+    },
+    // autoplay: {
+    //   delay: 10000,
+    // },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1199: {
+        slidesPerView: 2,
+        spaceBetween: 104,
+      },
+    },
+    pagination: {
+      el: ".works-slider .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".works-related .swiper-btn-next",
+      prevEl: ".works-related .swiper-btn-prev",
+    },
+    on: {
+      init: function (swiper) {
+        lazyLoad();
+      },
+    },
+  });
   /************************************ Scroll Arrows ************************************/
   $(window).scroll(function () {
     $(this).scrollTop() >= 500
@@ -78,7 +119,6 @@ $(document).ready(function () {
       1000
     );
   });
-
   $(".scroll-btn").on("click", function (e) {
     $(document).off("scroll");
 
