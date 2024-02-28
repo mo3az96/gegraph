@@ -1961,7 +1961,8 @@ footer {
   .work-cover .scroll-btn {
     position: absolute;
     bottom: 60px;
-    inset-inline-end: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 .work-cover ~ .page-content {
