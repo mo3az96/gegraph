@@ -250,10 +250,7 @@ html[dir=ltr] select {
     font-size: 36px;
   }
 }
-.services-section .section-head .section-title {
-  text-transform: uppercase;
-}
-.works-section .section-head .section-title {
+.services-section .section-head .section-title, .works-section .section-head .section-title, .service-overview .section-head .section-title {
   text-transform: uppercase;
 }
 @media (max-width: 767px) {
@@ -978,7 +975,6 @@ html[dir=ltr] .scroll-btn .scrollText {
 }
 .swiper-slide .work-item .work-content {
   max-width: 458px;
-  margin-inline-start: auto;
 }
 @media (max-width: 767px) {
   .swiper-slide .work-item {
@@ -992,6 +988,7 @@ html[dir=ltr] .scroll-btn .scrollText {
 }
 .swiper-slide:nth-of-type(2n) .work-item .work-content {
   max-width: 100%;
+  margin-inline-start: auto;
 }
 .swiper-slide:nth-of-type(2n) .work-item .work-img {
   aspect-ratio: 518/458;
@@ -2015,4 +2012,23 @@ footer {
 .work-img img {
   width: 100%;
   height: auto;
+}
+
+.service-overview {
+  margin-bottom: 190px;
+}
+@media (max-width: 767px) {
+  .service-overview {
+    margin-bottom: 80px;
+  }
+}
+.service-overview .service-description {
+  font-size: 14px;
+  line-height: 2.143;
+  color: #ffffff;
+}
+.service-overview .service-description p {
+  font-size: 14px;
+  line-height: 2.143;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
