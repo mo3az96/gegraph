@@ -64,8 +64,8 @@ $(document).ready(function () {
       },
     },
   });
-   /************************************ Scroll Arrows ************************************/
-   $(window).scroll(function () {
+  /************************************ Scroll Arrows ************************************/
+  $(window).scroll(function () {
     $(this).scrollTop() >= 500
       ? $(".arrow-top").fadeIn(500)
       : $(".arrow-top").fadeOut(500);
@@ -93,4 +93,22 @@ $(document).ready(function () {
       "swing"
     );
   });
+
+  /************************************ Filters ************************************/
+  // $(".filter-btn").click(function (e) {
+  //   $(".filter-btn").removeClass("active");
+  //   $(this).addClass("active");
+  //   let filter = $(this).attr("id");
+  //   if (filter == "all") {
+  //     $("[data-filter]").show();
+  //   } else {
+  //     $("[data-filter]").hide();
+  //     $("[data-filter]").each(function (index) {
+  //       let str = $(this).data("filter");
+  //       if (str.includes(filter)) {
+  //         $(this).show();
+  //       }
+  //     });
+  //   }
+  // });
 });
