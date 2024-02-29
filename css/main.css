@@ -376,6 +376,9 @@ html[lang=en-US] .section-arrow .headText {
 }
 
 .more-content {
+  float: inline-start;
+  width: 100%;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1846,12 +1849,6 @@ footer {
   color: #ed782d;
 }
 
-.page-content .works-list + .more-content {
-  float: inline-start;
-  width: 100%;
-  margin: 0;
-}
-
 .work-cover {
   height: 100vh;
   min-height: 500px;
@@ -2013,6 +2010,10 @@ footer {
 .work-img img {
   width: 100%;
   height: auto;
+}
+
+.vid-holder {
+  transition: all 0.3s ease-in-out;
 }
 
 .service-overview {

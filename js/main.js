@@ -35,18 +35,22 @@ $(document).ready(function () {
     breakpoints: {
       0: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
         spaceBetween: 20,
       },
       767: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 20,
       },
       992: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 40,
       },
       1199: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 100,
       },
     },
@@ -76,18 +80,22 @@ $(document).ready(function () {
     breakpoints: {
       0: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
         spaceBetween: 20,
       },
       767: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 20,
       },
       992: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 40,
       },
       1199: {
         slidesPerView: 2,
+        slidesPerGroup: 2,
         spaceBetween: 104,
       },
     },
@@ -135,20 +143,36 @@ $(document).ready(function () {
   });
 
   /************************************ Filters ************************************/
-  // $(".filter-btn").click(function (e) {
-  //   $(".filter-btn").removeClass("active");
-  //   $(this).addClass("active");
-  //   let filter = $(this).attr("id");
-  //   if (filter == "all") {
-  //     $("[data-filter]").show();
-  //   } else {
-  //     $("[data-filter]").hide();
-  //     $("[data-filter]").each(function (index) {
-  //       let str = $(this).data("filter");
-  //       if (str.includes(filter)) {
-  //         $(this).show();
-  //       }
-  //     });
-  //   }
-  // });
+  $(".filter-btn").click(function (e) {
+    $(".filter-btn").removeClass("active");
+    $(this).addClass("active");
+    let filter = $(this).attr("id");
+    $("[data-filter]").each(function () {
+      let $this = $(this);
+      let str = $(this).data("filter");
+      let resetTag = $("<div>")
+        .addClass($this.attr("class"))
+        .attr("data-filter", str)
+        .html($this.html());
+      $this.replaceWith(resetTag);
+      resetTag.hide();
+    });
+    if (filter == "all") {
+      $("[data-filter]").show();
+    } else {
+      $("[data-filter]").each(function () {
+        let $this = $(this);
+        let str = $(this).data("filter");
+        if (str.includes(filter)) {
+          let newTag = $("<article>")
+            .addClass($this.attr("class"))
+            .attr("data-filter", str)
+            .html($this.html());
+          $this.replaceWith(newTag);
+          newTag.show();
+        }
+      });
+    }
+    lazyLoad();
+  });
 });

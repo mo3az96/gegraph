@@ -26,7 +26,7 @@ function lazyLoad() {
 function preloadImage(img) {
   img.src = img.getAttribute("data-src");
   img.onload = function () {
-    img.removeAttribute("data-src");
+    // img.removeAttribute("data-src");
     img.parentElement.classList.remove("loading-img");
     img.parentElement.classList.add("loaded-img");
     img.parentElement.parentElement.classList.add("lazy-head-img");
