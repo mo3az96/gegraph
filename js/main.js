@@ -59,8 +59,8 @@ $(document).ready(function () {
       clickable: true,
     },
     navigation: {
-      nextEl: ".blog-section .swiper-btn-next",
-      prevEl: ".blog-section .swiper-btn-prev",
+      nextEl: ".blog-section .swiper-btn-next, .blog-related .swiper-btn-next",
+      prevEl: ".blog-section .swiper-btn-prev, .blog-related .swiper-btn-prev",
     },
     on: {
       init: function (swiper) {
