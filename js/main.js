@@ -22,7 +22,6 @@ $(document).ready(function () {
       }
     });
   }
-
   /************************************ Blog Sliders ************************************/
   var blogSwiper = new Swiper(".blog-slider .swiper", {
     loop: true,
@@ -113,6 +112,79 @@ $(document).ready(function () {
       },
     },
   });
+  /************************************ Testimonials Sliders ************************************/
+  var testimonialsSwiper = new Swiper(".testimonials-slider .swiper", {
+    loop: true,
+    a11y: {
+      enabled: false,
+    },
+    // autoplay: {
+    //   delay: 10000,
+    // },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1199: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+    pagination: {
+      el: ".testimonials-slider .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".testimonials-section .swiper-btn-next",
+      prevEl: ".testimonials-section .swiper-btn-prev",
+    },
+    on: {
+      init: function (swiper) {
+        lazyLoad();
+      },
+    },
+  });
+  /************************************ Statistics ************************************/
+  if ($(".about-statistics").length) {
+    var a = 0;
+    $(window).scroll(function () {
+      if (
+        a == 0 &&
+        $(this).scrollTop() >= $(".about-statistics").offset().top - 300
+      ) {
+        $(".statistic-number span").each(function () {
+          $(this)
+            .prop("Counter", 0)
+            .animate(
+              {
+                Counter: $(this).text(),
+              },
+              {
+                duration: 500,
+                easing: "swing",
+                step: function (now) {
+                  $(this).text(Math.ceil(now));
+                },
+              }
+            );
+        });
+        a++;
+      }
+    });
+  }
   /************************************ Scroll Arrows ************************************/
   $(window).scroll(function () {
     $(this).scrollTop() >= 500
