@@ -264,4 +264,14 @@ $(document).ready(function () {
       minimumResultsForSearch: Infinity,
     });
   }
+
+  $(".file-content input[type=file]").change(function () {
+    let file_val;
+    if ($(this).val() == "") {
+      file_val = $(this).attr("placeholder");
+    } else {
+      file_val = $(this).prop("files")[0].name;
+    }
+    $(this).next().html(file_val);
+  });
 });

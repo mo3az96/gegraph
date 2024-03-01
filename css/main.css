@@ -1283,7 +1283,7 @@ html[lang=en-US] .scroll-btn .scrollText {
   transform: scaleX(0);
   transition: all 0.3s ease-in-out;
 }
-.input-content:has(input:focus, textarea:focus)::after {
+.input-content:has(input:not([type=file]):focus, textarea:focus)::after {
   transform: scaleX(1);
 }
 .input-content:has(~ .form-error)::after {
@@ -1480,6 +1480,46 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
 }
 .select2-container .select2-results__option.select2-results__option--disabled {
   color: #ffffff;
+}
+
+.file-content {
+  position: relative;
+  width: 100%;
+}
+.file-content input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.file-content .file-preview {
+  height: 100%;
+}
+.file-content .file-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  inset-inline-end: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  width: 128px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+.file-content:hover .file-btn {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .page-content {
@@ -2882,6 +2922,48 @@ html[lang=ar] .testimonial-item .testimonial-icon i {
   color: #ed782d;
 }
 .branch-item :last-child {
+  margin: 0;
+}
+
+.methods-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 31px 15px;
+  margin-bottom: 48px;
+}
+@media (max-width: 991px) {
+  .methods-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .methods-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.method-item {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.method-item .method-value {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0 0 17px;
+}
+.method-item .method-value a {
+  direction: ltr;
+  display: inline-flex;
+}
+.method-item a {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+.method-item a:hover {
+  color: #ed782d;
+}
+.method-item :last-child {
   margin: 0;
 }
 
