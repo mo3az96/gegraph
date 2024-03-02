@@ -51,6 +51,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   background-color: #000000;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   background-color: #333333;
@@ -2986,4 +2987,36 @@ html[lang=ar] .testimonial-item .testimonial-icon i {
   .careers-form {
     margin-bottom: 70px;
   }
+}
+
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ed782d;
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(242, 154, 98, 0.5);
 }/*# sourceMappingURL=main.css.map */
