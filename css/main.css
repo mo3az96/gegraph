@@ -202,6 +202,38 @@ html[lang=en-US] select {
   content: "\f39e";
 }
 
+html,
+html *,
+body,
+body * {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ed782d;
+}
+
+.cursor-dot-outline {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(242, 154, 98, 0.5);
+}
+
 .lazy-img-parent img {
   transition: all 0.3s ease-in-out;
 }
@@ -2987,36 +3019,4 @@ html[lang=ar] .testimonial-item .testimonial-icon i {
   .careers-form {
     margin-bottom: 70px;
   }
-}
-
-html,
-html *,
-body,
-body * {
-  cursor: none;
-}
-
-.cursor-dot,
-.cursor-dot-outline {
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.cursor-dot {
-  width: 8px;
-  height: 8px;
-  background-color: #ed782d;
-}
-
-.cursor-dot-outline {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(242, 154, 98, 0.5);
 }/*# sourceMappingURL=main.css.map */
