@@ -399,6 +399,11 @@ html[lang=en-US] .section-arrow .headText {
     margin-top: 40px;
   }
 }
+@media (max-width: 767px) {
+  .page-content .works-list ~ .more-content {
+    margin-top: 40px;
+  }
+}
 
 .slider-tools {
   display: flex;
@@ -946,9 +951,11 @@ html[lang=en-US] .scroll-btn .scrollText {
 @media (min-width: 992px) {
   .home-works .work-item:last-of-type {
     float: unset;
-    width: 900px;
+    width: 100%;
     padding: 30px 0 0;
-    margin: 0 auto;
+  }
+  .home-works .work-item:last-of-type .work-content {
+    transform-origin: top;
   }
   .home-works .work-item:last-of-type .work-img {
     aspect-ratio: 900/458;
@@ -1012,6 +1019,10 @@ html[lang=en-US] .scroll-btn .scrollText {
   .swiper-slide:nth-of-type(2n) .work-item .work-img {
     aspect-ratio: 1;
   }
+}
+
+[class^=gsap-marker-] {
+  display: none !important;
 }
 
 .clients-list {
@@ -2008,6 +2019,9 @@ footer {
     -o-object-position: top left;
        object-position: top left;
   }
+}
+html[lang=ar] .about-section .bg img {
+  transform: scaleX(-1);
 }
 .about-section .about-content {
   position: relative;
