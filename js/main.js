@@ -2,6 +2,15 @@ $(window).on("load", function () {
   $("body").removeClass("overflow");
 });
 $(document).ready(function () {
+  /************************************ Fixed Header ************************************/
+  $(this).scrollTop() >= 150
+    ? $("header").addClass("fixed")
+    : $("header").removeClass("fixed ");
+  $(window).scroll(function () {
+    $(this).scrollTop() >= 150
+      ? $("header").addClass("fixed")
+      : $("header").removeClass("fixed ");
+  });
   /************************************ Navbar ************************************/
   if ($(window).width() < 767) {
     $(".menu-btn").click(function () {
@@ -274,31 +283,6 @@ $(document).ready(function () {
     }
     $(this).next().html(file_val);
   });
-
-  if ($(window).width() >= 1192 && $(".home-works").length) {
-    var images = gsap.utils.toArray(
-      ".home-works .work-item:last-child .work-content"
-    );
-
-    images.forEach((image, i) => {
-      gsap.fromTo(
-        image,
-        { scale: 0.78947 },
-        {
-          scale: 1,
-          ease: "none",
-          scrollTrigger: {
-            pin: ".works-list",
-            trigger: ".work-item:last-child",
-            start: "top top",
-            end: "bottom top",
-            scrub: 0.1,
-            markers: true,
-          },
-        }
-      );
-    });
-  }
 });
 
 var cursor = {

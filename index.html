@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/intlTelInput.min.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -76,11 +77,13 @@
     <!-- Start Hero -->
     <main class="hero-section">
       <div class="bg loading-img lazy-img-parent">
-        <img data-src="images/bg/hero.png" class="lazy-img" />
+        <img data-src="images/bg/hero.png" class="lazy-img animated-img" />
       </div>
       <div class="hero-content">
-        <h1 class="hero-title">Make It Visual</h1>
-        <h5 class="hero-subtitle">Strong brand means strong visuaL</h5>
+        <h1 class="hero-title" data-aos="fade-down">Make It Visual</h1>
+        <h5 class="hero-subtitle" data-aos="fade-down" data-aos-delay="300">
+          Strong brand means strong visuaL
+        </h5>
       </div>
       <div class="hero-tools">
         <button class="scroll-btn">
@@ -117,11 +120,18 @@
     <section class="services-section">
       <div class="container">
         <div class="section-head">
-          <h2 class="section-title">What can we offer?</h2>
-          <a href="contact.html" class="section-link"> Let’s Talk Business </a>
+          <h2 class="section-title" data-aos="flip-up">What can we offer?</h2>
+          <a
+            href="contact.html"
+            class="section-link"
+            data-aos="flip-down"
+            data-aos-delay="500"
+          >
+            Let’s Talk Business
+          </a>
         </div>
         <div class="accordion services-list" id="services">
-          <div class="accordion-item service-item">
+          <div class="accordion-item service-item" data-aos="fade-down">
             <h2 class="accordion-header">
               <button
                 class="accordion-button service-button collapsed"
@@ -168,7 +178,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item service-item">
+          <div
+            class="accordion-item service-item"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <h2 class="accordion-header">
               <button
                 class="accordion-button service-button collapsed"
@@ -215,7 +229,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item service-item">
+          <div
+            class="accordion-item service-item"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
             <h2 class="accordion-header">
               <button
                 class="accordion-button service-button collapsed"
@@ -262,7 +280,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item service-item">
+          <div
+            class="accordion-item service-item"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
             <h2 class="accordion-header">
               <button
                 class="accordion-button service-button collapsed"
@@ -309,7 +331,11 @@
               </div>
             </div>
           </div>
-          <div class="accordion-item service-item">
+          <div
+            class="accordion-item service-item"
+            data-aos="fade-down"
+            data-aos-delay="500"
+          >
             <h2 class="accordion-header">
               <button
                 class="accordion-button service-button collapsed"
@@ -373,6 +399,7 @@
         muted
         playsinline
         loop
+        data-aos="zoom-in"
       ></video>
     </section>
     <!-- End Video -->
@@ -381,10 +408,10 @@
     <section class="works-section home-works">
       <div class="container">
         <div class="section-head big-head">
-          <h2 class="section-title">
+          <h2 class="section-title" data-aos="fade-in">
             <span><i>We</i></span> help brands grow faster
           </h2>
-          <div class="section-arrow">
+          <div class="section-arrow" data-aos="zoom-in">
             <svg
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
@@ -410,13 +437,16 @@
           </div>
         </div>
         <div class="works-list">
-          <div class="work-item">
+          <div class="work-item" data-aos="fade-down" data-aos-delay="000">
             <div class="work-content">
               <a
                 href="workDetails.html"
                 class="work-img loading-img lazy-img-parent"
               >
-                <img data-src="images/works/1.jpg" class="lazy-img" />
+                <img
+                  data-src="images/works/1.jpg"
+                  class="lazy-img animated-img"
+                />
               </a>
               <h3 class="work-title">
                 <a href="workDetails.html">El Amrety</a>
@@ -426,13 +456,16 @@
               </ul>
             </div>
           </div>
-          <div class="work-item">
+          <div class="work-item" data-aos="fade-down" data-aos-delay="50">
             <div class="work-content">
               <a
                 href="workDetails.html"
                 class="work-img loading-img lazy-img-parent"
               >
-                <img data-src="images/works/2.jpg" class="lazy-img" />
+                <img
+                  data-src="images/works/2.jpg"
+                  class="lazy-img animated-img"
+                />
               </a>
               <h3 class="work-title">
                 <a href="workDetails.html">Stone Yard Restaurant & Cafe</a>
@@ -442,13 +475,16 @@
               </ul>
             </div>
           </div>
-          <div class="work-item">
+          <div class="work-item" data-aos="fade-down" data-aos-delay="100">
             <div class="work-content">
               <a
                 href="workDetails.html"
                 class="work-img loading-img lazy-img-parent"
               >
-                <img data-src="images/works/3.jpg" class="lazy-img" />
+                <img
+                  data-src="images/works/3.jpg"
+                  class="lazy-img animated-img"
+                />
               </a>
               <h3 class="work-title">
                 <a href="workDetails.html">Elvan</a>
@@ -463,13 +499,16 @@
               </ul>
             </div>
           </div>
-          <div class="work-item">
+          <div class="work-item" data-aos="fade-down" data-aos-delay="150">
             <div class="work-content">
               <a
                 href="workDetails.html"
                 class="work-img loading-img lazy-img-parent"
               >
-                <img data-src="images/works/4.jpg" class="lazy-img" />
+                <img
+                  data-src="images/works/4.jpg"
+                  class="lazy-img animated-img"
+                />
               </a>
               <h3 class="work-title">
                 <a href="workDetails.html">Familio</a>
@@ -484,13 +523,16 @@
               </ul>
             </div>
           </div>
-          <div class="work-item">
+          <div class="work-item" data-aos="fade-down" data-aos-delay="200">
             <div class="work-content">
               <a
                 href="workDetails.html"
                 class="work-img loading-img lazy-img-parent"
               >
-                <img data-src="images/works/5.jpg" class="lazy-img" />
+                <img
+                  data-src="images/works/5.jpg"
+                  class="lazy-img animated-img"
+                />
               </a>
               <h3 class="work-title">
                 <a href="workDetails.html">Al Saraya</a>
@@ -505,13 +547,16 @@
               </ul>
             </div>
           </div>
-          <div class="work-item">
+          <div class="work-item" data-aos="fade-down" data-aos-delay="250">
             <div class="work-content">
               <a
                 href="workDetails.html"
                 class="work-img loading-img lazy-img-parent"
               >
-                <img data-src="images/works/6.jpg" class="lazy-img" />
+                <img
+                  data-src="images/works/6.jpg"
+                  class="lazy-img animated-img"
+                />
               </a>
               <h3 class="work-title">
                 <a href="workDetails.html">RONALDO’S Pizzaria</a>
@@ -545,7 +590,7 @@
             </div>
           </div>
         </div>
-        <div class="more-content">
+        <div class="more-content" data-aos="flip-down">
           <a href="works.html" class="section-link"> Discover more projects </a>
         </div>
       </div>
@@ -555,19 +600,28 @@
     <!-- Start About -->
     <section class="about-section">
       <div class="bg loading-img lazy-img-parent">
-        <img data-src="images/bg/about.png" class="lazy-img" />
+        <img data-src="images/bg/about.png" class="lazy-img animated-img" />
       </div>
       <div class="container">
         <div class="about-content">
-          <div class="about-logo loading-img lazy-img-parent">
+          <div
+            class="about-logo loading-img lazy-img-parent"
+            data-aos="zoom-in"
+          >
             <img data-src="images/logoAbout.svg" class="lazy-img" />
           </div>
-          <h2 class="about-title">We are <span>Gegraph</span></h2>
-          <p class="about-description">
+          <h2 class="about-title" data-aos="fade-down" data-aos-delay="200">
+            We are <span>Gegraph</span>
+          </h2>
+          <p
+            class="about-description"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
             advertising agency based in Saudi Arabia, providing creative
             solutions.
           </p>
-          <div class="about-links">
+          <div class="about-links" data-aos="fade-down" data-aos-delay="600">
             <a href="about.html" class="about-link"> Read more </a>
             <a href="#!" class="about-btn" download> Download Brochure </a>
           </div>
@@ -580,8 +634,17 @@
     <section class="clients-section">
       <div class="container">
         <div class="section-head big-head">
-          <h2 class="section-title"><span>Collaboration</span> at its best!</h2>
-          <a href="contact.html" class="section-link"> Let’s Talk Business </a>
+          <h2 class="section-title" data-aos="fade-up">
+            <span>Collaboration</span> at its best!
+          </h2>
+          <a
+            href="contact.html"
+            class="section-link"
+            data-aos="flip-up"
+            data-aos-delay="200"
+          >
+            Let’s Talk Business
+          </a>
         </div>
         <div class="clients-list">
           <div class="client-item loading-img lazy-img-parent">
@@ -671,8 +734,8 @@
     <section class="blog-section">
       <div class="container">
         <div class="section-head">
-          <h2 class="section-title">BLOG</h2>
-          <div class="slider-tools">
+          <h2 class="section-title" data-aos="zoom-in">BLOG</h2>
+          <div class="slider-tools" data-aos="zoom-in" data-aos-delay="200">
             <div class="swiper-btn-prev swiper-btn">
               <i class="fa-sharp fa-thin fa-arrow-left"></i>
             </div>
@@ -685,12 +748,15 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="post-item">
+                <div class="post-item" data-aos="fade-up">
                   <a
                     href="blogPost.html"
                     class="post-img loading-img lazy-img-parent"
                   >
-                    <img data-src="images/blog/1.jpg" class="lazy-img" />
+                    <img
+                      data-src="images/blog/1.jpg"
+                      class="lazy-img animated-img"
+                    />
                   </a>
                   <ul class="blog-services">
                     <li>
@@ -706,12 +772,15 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="post-item">
+                <div class="post-item" data-aos="fade-up" data-aos-delay="300">
                   <a
                     href="blogPost.html"
                     class="post-img loading-img lazy-img-parent"
                   >
-                    <img data-src="images/blog/2.jpg" class="lazy-img" />
+                    <img
+                      data-src="images/blog/2.jpg"
+                      class="lazy-img animated-img"
+                    />
                   </a>
                   <ul class="blog-services">
                     <li>
@@ -732,7 +801,10 @@
                     href="blogPost.html"
                     class="post-img loading-img lazy-img-parent"
                   >
-                    <img data-src="images/blog/3.jpg" class="lazy-img" />
+                    <img
+                      data-src="images/blog/3.jpg"
+                      class="lazy-img animated-img"
+                    />
                   </a>
                   <ul class="blog-services">
                     <li>
@@ -753,7 +825,10 @@
                     href="blogPost.html"
                     class="post-img loading-img lazy-img-parent"
                   >
-                    <img data-src="images/blog/4.jpg" class="lazy-img" />
+                    <img
+                      data-src="images/blog/4.jpg"
+                      class="lazy-img animated-img"
+                    />
                   </a>
                   <ul class="blog-services">
                     <li>
@@ -778,13 +853,17 @@
     <!-- Start Banner -->
     <section class="banner-section">
       <div class="bg loading-img lazy-img-parent">
-        <img data-src="images/bg/banner.png" class="lazy-img" />
+        <img data-src="images/bg/banner.png" class="lazy-img animated-img" />
       </div>
       <div class="container">
         <div class="banner-content">
-          <p class="banner-description">Do you have a nice project?</p>
-          <h2 class="banner-title">let’s talk about it over a good coffee</h2>
-          <div class="more-content">
+          <p class="banner-description" data-aos="fade-down">
+            Do you have a nice project?
+          </p>
+          <h2 class="banner-title" data-aos="fade-down" data-aos-delay="200">
+            let’s talk about it over a good coffee
+          </h2>
+          <div class="more-content" data-aos="fade-down" data-aos-delay="400">
             <a href="contact.html" class="section-link">
               Book an Appointment
             </a>
@@ -798,10 +877,13 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="footer-logo loading-img lazy-img-parent">
+          <div
+            class="footer-logo loading-img lazy-img-parent"
+            data-aos="zoom-in"
+          >
             <img data-src="images/logoFooter.svg" class="lazy-img" />
           </div>
-          <nav class="footer-nav">
+          <nav class="footer-nav" data-aos="fade-down">
             <ul class="nav-list">
               <li>
                 <a href="works.html">Works</a>
@@ -826,7 +908,7 @@
               </li>
             </ul>
           </nav>
-          <div class="socials">
+          <div class="socials" data-aos="fade-down" data-aos-delay="200">
             <a href="#!" target="_blank" class="social">
               <i class="fa-brands fa-facebook"></i>
             </a>
@@ -843,7 +925,9 @@
               <i class="fa-brands fa-pinterest"></i>
             </a>
           </div>
-          <p class="copyright">© Gegraph, All rights reserved 2024</p>
+          <p class="copyright" data-aos="fade-down" data-aos-delay="400">
+            © Gegraph, All rights reserved 2024
+          </p>
         </div>
       </div>
     </footer>
@@ -860,6 +944,9 @@
     <script src="js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
   </body>
 </html>

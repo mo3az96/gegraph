@@ -108,6 +108,14 @@ html[lang=ar] body {
     transform: rotate(-360deg);
   }
 }
+[data-aos] {
+  transition-duration: 1s !important;
+}
+
+.simpleParallax {
+  width: 100%;
+}
+
 /* General Resets */
 * {
   outline: 0 !important;
@@ -1581,6 +1589,7 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
   align-items: center;
   justify-content: space-between;
   padding: 34px 0;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 1199px) {
   .header {
@@ -1592,10 +1601,24 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
     padding: 15px 0;
   }
 }
+.fixed .header {
+  padding: 25px 0;
+}
+@media (max-width: 1199px) {
+  .fixed .header {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 767px) {
+  .fixed .header {
+    padding: 10px 0;
+  }
+}
 
 .logo {
   display: flex;
   width: 253px;
+  transition: all 0.3s ease-in-out;
 }
 .logo img {
   width: 100%;
@@ -1613,6 +1636,24 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
 @media (max-width: 767px) {
   .logo {
     width: 180px;
+  }
+}
+.fixed .logo {
+  width: 230px;
+}
+@media (max-width: 1199px) {
+  .fixed .logo {
+    width: 180px;
+  }
+}
+@media (max-width: 991px) {
+  .fixed .logo {
+    width: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .fixed .logo {
+    width: 150px;
   }
 }
 
@@ -1726,14 +1767,38 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
     margin-top: 25px;
   }
 }
+.fixed .header-btn {
+  padding: 0 15px;
+  height: 40px;
+  font-size: 14px;
+}
+@media (max-width: 1199px) {
+  .fixed .header-btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .fixed .header-btn {
+    height: 50px;
+    padding: 0 30px;
+    font-size: 18px;
+    margin-top: 25px;
+  }
+}
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+header.fixed {
+  background-color: #000000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .nav-list {

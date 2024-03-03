@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css" />
     <link rel="stylesheet" href="css/intlTelInput.min.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
@@ -76,15 +77,24 @@
     <section class="page-content">
       <div class="container">
         <div class="about-main">
-          <div class="about-logo loading-img lazy-img-parent">
+          <div
+            class="about-logo loading-img lazy-img-parent"
+            data-aos="zoom-in"
+          >
             <img data-src="images/logoFooter.svg" class="lazy-img" />
           </div>
-          <h1 class="about-title">We are <span>Gegraph</span></h1>
-          <p class="about-description">
+          <h1 class="about-title" data-aos="fade-down" data-aos-delay="200">
+            We are <span>Gegraph</span>
+          </h1>
+          <p
+            class="about-description"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
             advertising agency based in Saudi Arabia, providing creative
             solutions.
           </p>
-          <div class="about-text">
+          <div class="about-text" data-aos="fade-up" data-aos-delay="500">
             <p>
               If you are going to use a passage of Lorem Ipsum, you need to be
               sure there isn't anything embarrassing hidden in the middle of
@@ -99,7 +109,7 @@
           </div>
         </div>
         <div class="about-features">
-          <div class="feature-item">
+          <div class="feature-item" data-aos="zoom-in" data-aos-delay="000">
             <h3 class="feature-title">Our Vision</h3>
             <div class="about-text">
               <p>
@@ -110,7 +120,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="zoom-in" data-aos-delay="100">
             <h3 class="feature-title">Our Mission</h3>
             <div class="about-text">
               <p>
@@ -122,7 +132,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
             <h3 class="feature-title">Our Core Values</h3>
             <div class="about-text">
               <p>
@@ -134,7 +144,7 @@
               </p>
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
             <h3 class="feature-title">Our Process</h3>
             <div class="about-text">
               <p>
@@ -172,8 +182,10 @@
       <div class="testimonials-section">
         <div class="container">
           <div class="section-head">
-            <h2 class="section-title">Voice of our clients</h2>
-            <div class="slider-tools">
+            <h2 class="section-title" data-aos="fade-down">
+              Voice of our clients
+            </h2>
+            <div class="slider-tools" data-aos="zoom-in" data-aos-delay="200">
               <div class="swiper-btn-prev swiper-btn">
                 <i class="fa-sharp fa-thin fa-arrow-left"></i>
               </div>
@@ -182,7 +194,7 @@
               </div>
             </div>
           </div>
-          <h3 class="testimonials-title">
+          <h3 class="testimonials-title" data-aos="fade-up">
             Hear from our clients that took the journey with us, whom we helped
             transform their visions into their story.
           </h3>
@@ -264,13 +276,17 @@
     <!-- Start Banner -->
     <section class="banner-section">
       <div class="bg loading-img lazy-img-parent">
-        <img data-src="images/bg/banner.png" class="lazy-img" />
+        <img data-src="images/bg/banner.png" class="lazy-img animated-img" />
       </div>
       <div class="container">
         <div class="banner-content">
-          <p class="banner-description">Do you have a nice project?</p>
-          <h2 class="banner-title">let’s talk about it over a good coffee</h2>
-          <div class="more-content">
+          <p class="banner-description" data-aos="fade-down">
+            Do you have a nice project?
+          </p>
+          <h2 class="banner-title" data-aos="fade-down" data-aos-delay="200">
+            let’s talk about it over a good coffee
+          </h2>
+          <div class="more-content" data-aos="fade-down" data-aos-delay="400">
             <a href="contact.html" class="section-link">
               Book an Appointment
             </a>
@@ -284,10 +300,13 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="footer-logo loading-img lazy-img-parent">
+          <div
+            class="footer-logo loading-img lazy-img-parent"
+            data-aos="zoom-in"
+          >
             <img data-src="images/logoFooter.svg" class="lazy-img" />
           </div>
-          <nav class="footer-nav">
+          <nav class="footer-nav" data-aos="fade-down">
             <ul class="nav-list">
               <li>
                 <a href="works.html">Works</a>
@@ -312,7 +331,7 @@
               </li>
             </ul>
           </nav>
-          <div class="socials">
+          <div class="socials" data-aos="fade-down" data-aos-delay="200">
             <a href="#!" target="_blank" class="social">
               <i class="fa-brands fa-facebook"></i>
             </a>
@@ -329,7 +348,9 @@
               <i class="fa-brands fa-pinterest"></i>
             </a>
           </div>
-          <p class="copyright">© Gegraph, All rights reserved 2024</p>
+          <p class="copyright" data-aos="fade-down" data-aos-delay="400">
+            © Gegraph, All rights reserved 2024
+          </p>
         </div>
       </div>
     </footer>
@@ -346,6 +367,9 @@
     <script src="js/select2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animate.js"></script>
   </body>
 </html>
