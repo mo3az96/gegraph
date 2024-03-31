@@ -375,37 +375,20 @@ html[lang=en-US] select {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   font-size: 58px;
   color: #ffffff;
   padding: 0;
   transition: all 0.3s ease-in-out;
 }
-.section-arrow .head-svg {
+.section-arrow i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.section-arrow img {
   width: 100%;
   aspect-ratio: 1;
-  z-index: 1;
-  direction: ltr;
-}
-.section-arrow .headText {
-  fill: #ffffff;
-  font-weight: 400;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-}
-html[lang=ar] .section-arrow .headText {
-  font-size: 10px;
-}
-html[lang=en-US] .section-arrow .headText {
-  font-size: 10px;
-  letter-spacing: 1.5px;
-}
-.section-arrow .text-rotate {
-  transform-origin: center;
   animation: spin 15s linear infinite;
 }
 @media (max-width: 767px) {
@@ -689,7 +672,6 @@ html[lang=ar] .hero-subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   font-size: 23px;
   color: #ffffff;
   cursor: pointer;
@@ -702,37 +684,21 @@ html[lang=ar] .hero-subtitle {
     cursor: none;
   }
 }
-.scroll-btn .scroll-svg {
+.scroll-btn i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.scroll-btn img {
   width: 100%;
   aspect-ratio: 1;
-  z-index: 1;
-  direction: ltr;
-}
-.scroll-btn .scrollText {
-  fill: #ffffff;
-  font-weight: 400;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
-}
-html[lang=ar] .scroll-btn .scrollText {
-  font-size: 15px;
-}
-html[lang=en-US] .scroll-btn .scrollText {
-  font-size: 10px;
-  letter-spacing: 4px;
-}
-.scroll-btn .text-rotate {
-  transform-origin: center;
   animation: spin 15s linear infinite;
 }
 .scroll-btn:hover {
   color: #ed782d;
 }
-.scroll-btn:hover .text-rotate {
+.scroll-btn:hover img {
   animation-play-state: paused;
 }
 
