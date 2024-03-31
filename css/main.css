@@ -650,6 +650,9 @@ html[lang=ar] .slider-tools .swiper-btn i {
     line-height: 1.2;
   }
 }
+html[lang=ar] .hero-subtitle {
+  margin-bottom: 15px;
+}
 
 .hero-tools {
   position: absolute;
@@ -1981,7 +1984,7 @@ html[lang=en-US] .nav-list a.lang {
   }
   .header-nav .lang {
     position: absolute;
-    top: 7px;
+    top: 15px;
     inset-inline-start: 25px;
     font-weight: 300 !important;
     opacity: 0.5;
