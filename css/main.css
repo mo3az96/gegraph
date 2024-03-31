@@ -153,6 +153,11 @@ select {
 [role=button] {
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  [role=button] {
+    cursor: none;
+  }
+}
 
 ul {
   list-style: none;
@@ -210,13 +215,14 @@ html[lang=en-US] select {
   content: "\f39e";
 }
 
-html,
-html *,
-body,
-body * {
-  cursor: none;
+@media (min-width: 768px) {
+  html,
+  html *,
+  body,
+  body * {
+    cursor: none;
+  }
 }
-
 .cursor-dot,
 .cursor-dot-outline {
   pointer-events: none;
@@ -228,6 +234,12 @@ body * {
   transform: translate(-50%, -50%);
   z-index: 999;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .cursor-dot,
+  .cursor-dot-outline {
+    display: none !important;
+  }
 }
 
 .cursor-dot {
@@ -466,6 +478,11 @@ html[lang=en-US] .section-arrow .headText {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 768px) {
+  .slider-tools .swiper-btn {
+    cursor: none;
+  }
+}
 .slider-tools .swiper-btn:hover {
   background-color: #fff;
   color: #000000;
@@ -677,6 +694,11 @@ html[lang=ar] .slider-tools .swiper-btn i {
   flex-shrink: 0;
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 768px) {
+  .scroll-btn {
+    cursor: none;
+  }
+}
 .scroll-btn .scroll-svg {
   position: absolute;
   top: 50%;
@@ -764,6 +786,11 @@ html[lang=en-US] .scroll-btn .scrollText {
   color: #ffffff;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 30px 0 0;
+}
+@media (min-width: 768px) {
+  .service-item .service-button {
+    cursor: none;
+  }
 }
 .service-item .service-button .plus {
   width: 30px;
@@ -1345,7 +1372,11 @@ html[lang=en-US] .scroll-btn .scrollText {
 
 .intl-tel-input {
   direction: ltr;
-  width: 100%;
+}
+@media (min-width: 768px) {
+  .intl-tel-input {
+    width: 100%;
+  }
 }
 .intl-tel-input .flag-container .selected-flag {
   display: flex;
@@ -1548,8 +1579,14 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
   cursor: pointer;
   z-index: 2;
 }
+@media (min-width: 768px) {
+  .file-content input {
+    cursor: none;
+  }
+}
 .file-content .file-preview {
   height: 100%;
+  padding-inline-end: 95px;
 }
 .file-content .file-btn {
   position: absolute;
@@ -1568,6 +1605,12 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
   font-weight: 500;
   color: #ffffff;
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 767px) {
+  .file-content .file-btn {
+    width: 90px;
+    font-size: 12px;
+  }
 }
 .file-content:hover .file-btn {
   background-color: #ffffff;
@@ -1677,6 +1720,11 @@ html[lang=en-US] .select2-container .select2-selection--single .select2-selectio
   width: max-content;
   padding: 0;
   z-index: 99;
+}
+@media (min-width: 768px) {
+  .nav-trigger .menu-btn {
+    cursor: none;
+  }
 }
 .nav-trigger .menu-btn .btn-bar {
   position: relative;
@@ -1931,6 +1979,15 @@ html[lang=en-US] .nav-list a.lang {
     font-size: 18px;
     font-weight: 500;
   }
+  .header-nav .lang {
+    position: absolute;
+    top: 7px;
+    inset-inline-start: 25px;
+    font-weight: 300 !important;
+    opacity: 0.5;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   .header-nav.active {
     z-index: 98;
     transition: z-index 0.01s ease-in-out 0.3s;
@@ -2030,8 +2087,8 @@ footer {
 .arrow-top i {
   width: 40px;
   height: 40px;
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  background-color: #fff;
   border: 1px solid #ffffff;
   display: flex;
   align-items: center;
@@ -2044,9 +2101,15 @@ footer {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 768px) {
+  .arrow-top i {
+    cursor: none;
+  }
+}
 .arrow-top i:hover {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ed782d;
+  border-color: #ed782d;
+  color: #ffffff;
 }
 
 .services-section {
@@ -2320,6 +2383,9 @@ html[lang=ar] .about-section .bg img {
     text-align: center;
     font-size: 24px;
   }
+}
+html[lang=ar] .banner-section .banner-description {
+  margin-bottom: 10px;
 }
 .banner-section .more-content {
   margin: 0;
@@ -2691,6 +2757,9 @@ html[lang=ar] .about-section .bg img {
     height: 2px;
   }
 }
+html[lang=ar] .about-main .about-title {
+  margin-bottom: 20px;
+}
 @media (max-width: 767px) {
   .about-main .about-title {
     font-size: 32px;
@@ -2940,6 +3009,9 @@ html[lang=ar] .testimonial-item .testimonial-icon i {
   display: block;
   font-weight: 700;
   color: #ed782d;
+}
+html[lang=ar] .contact-title strong {
+  margin-top: 20px;
 }
 @media (max-width: 767px) {
   .contact-title {
