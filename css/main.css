@@ -2056,8 +2056,8 @@ footer {
 .arrow-top i {
   width: 40px;
   height: 40px;
-  color: #000000;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: transparent;
   border: 1px solid #ffffff;
   display: flex;
   align-items: center;
@@ -2076,9 +2076,8 @@ footer {
   }
 }
 .arrow-top i:hover {
-  background-color: #ed782d;
-  border-color: #ed782d;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .services-section {
